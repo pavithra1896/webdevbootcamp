@@ -5,8 +5,8 @@ var userSchema = new mongoose.Schema({
     name: String,
     posts: [
         {
-            type: mongoose.Schema.Types.ObjectId,
-            ref: "Post"
+        type: mongoose.Schema.Types.ObjectId,//mongoose projectid belonging to Post is included rather than postSchema as attribute in userSchema a
+        ref: "Post"
         }
     ]
 });
