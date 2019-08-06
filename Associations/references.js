@@ -1,7 +1,7 @@
 var mongoose = require("mongoose");
 mongoose.connect("mongodb://localhost/blog_demo_2");
 
-var Post = require("./models/post");
+var Post = require("./models/post");// ./ is used to refer current directory
 var User = require("./models/user");
 //create a post,find a user created before,push the post to that user and save the user.
 Post.create({
